@@ -1,59 +1,128 @@
 
 /* Navbar section */
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+/* .bg-dark {
+  background:  !important;
+} */
+
 nav ul > li {
   margin-right: 1.5rem;
 }
 
-@media (max-width: 991px) {
-  .navbar-scroll {
-    background-color: #fff;
-  }
-     
-  .navbar-scroll .navbar-brand,
-  .navbar-scroll .nav-link,
-  .navbar-scroll .fa-bars {
-    color: #4f4f4f !important;
-  }         
+.navbar {
+    background:#000000e6;
+
+}
+.navbar-brand{
+  color:white;
 }
 
-.navbar-brand {
-  letter-spacing: 3px;
-  font-size: 2rem;
-  font-weight: 500;
-}
-.navbar-scroll .navbar-brand,
-.navbar-scroll .nav-link,
-.navbar-scroll .fa-bars {
-  color: #fff;
+.navbar ul.navbar-nav a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #f5f8fb;
 }
 
-.navbar-scroll {
-  box-shadow: none;
+.navbar ul.navbar-nav a:hover {
+    background: transparent;
 }
 
-.navbar-scrolled {
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+.navbar button.navbar-toggle {
+    background: #ff854f;
+    border-radius: 3px;
 }
 
-.navbar-scrolled .navbar-brand,
-.navbar-scrolled .nav-link,
-.navbar-scrolled .fa-bars {
-  color: #4f4f4f;
+.navbar button.navbar-toggle:hover {
+    background: #ff854f;
 }
 
-.navbar-scrolled {
-    background-color: #fff;
+.navbar button.navbar-toggle > span.icon-bar {
+    background: white;
 }
 
-.slider-top {
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+    background: white !important;
+    opacity: 0.9;
+    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 13%) !important;
+}
+
+.navbar.scrolled .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link,
+.navbar.scrolled .navbar-nav .nav-link {
+  color: #000 !important;
+}
+
+/* .slider-top {
     padding: 1rem 10rem;
 }
 
 .mySwiper {
     border-radius: 15px;
-}
+} */
 
 .swiper-pagination-bullet-active {
   width: 20px !important;
   border-radius: 100px !important;
 }
+
+/* CSS Katalog */
+.see-more {
+  display: inline-grid;
+  align-items: center;
+  color: #0049cc;
+  background: #ebf5ff;
+  border-radius: 30px;
+  padding: 0 23px;
+  font-weight: 500;
+}
+
+.see-more i {
+  font-size: 13px;
+  margin-left: 0.3rem;
+}
+
+.ticket-ready {
+  color: #0ccd0c;
+  font-size: 13px;
+  display: inline-grid;
+  align-items: center;
+}
+
+.ticket-sold {
+  color: #f52d2d;
+  font-size: 13px;
+  display: inline-grid;
+  align-items: center;
+}
+
+.harga-katalog {
+  color: #000000ba;
+  margin-bottom: 0;
+}
+
+.judul-katalog {
+  font-size: 17px;
+  line-height: 1.5rem;
+}
+
+.lokasi-katalog {
+  margin-bottom: 0;
+}
+
+.tanggal-katalog {
+  font-size: 13.5px;
+}
+/* CSS Katalog - END */

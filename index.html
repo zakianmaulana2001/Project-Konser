@@ -13,12 +13,20 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <!-- Google Font Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <title>Comika.id</title>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 navbar-scroll">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="assets/img/cropped-Logo_Comika.png" alt="" width="70%">
@@ -45,171 +53,117 @@
       </div>
     </div>
   </nav>
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 navbar-scroll">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/cropped-Logo_Comika.png" alt="" width="70%">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Katalog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
 
-  <section class="slider-top">
+  <!-- Section Header Slider -->
+  <section class="slider-top mt-5 pt-4">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="assets/img/slider-2.png" alt=""></div>
         <div class="swiper-slide"><img src="assets/img/slider-1.png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/slider-2.png" alt=""></div>
         <div class="swiper-slide"><img src="assets/img/slider-3.png" alt=""></div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
   </section>
-  <div class="clear"></div>
-  <section class="section-catalog mt-5">
-    <div class="col-md-12">
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="assets/img/katalog/COVER-AWAS-LICIN--300x300.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Comedy Awas Licin</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <a href="#" class="btn btn-primary">Add To Card</a>
+  <!-- Section Header Slider - END -->
+  
+  <div class="container mb-5">
+    <!-- Section Katalog -->
+    <section class="section-catalog mt-5">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-between mb-4">
+          <h4 class="section-title">Event Recommendation</h4>
+          <a class="see-more" href="javascript:void(0)">
+            <span>
+              Lihat Semua
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="assets/img/katalog/COVER-AWAS-LICIN--300x300.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="judul-katalog">Stray Kids 2nd World Tour “MANIAC” in JAKARTA Day 2 - November 13</h5>
+                <p class="lokasi-katalog">Jakarta Utara</p>
+                <span class="tanggal-katalog">13 Nov 2020</span>
+              </div>
+              <div class="">
+                <div class="d-flex justify-content-between mt-auto mx-3 mb-3">
+                  <h4 class="harga-katalog">IDR 1.415.000</h4>
+                  <span class="ticket-ready">Ticket Tersedia Sekarang</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="assets/img/katalog/cover-cakap2-300x300.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Cakap Cakep</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <a href="#" class="btn btn-primary">Add To Card</a>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="assets/img/katalog/cover-cakap2-300x300.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="judul-katalog">AIR SUPPLY LIVE IN SEMARANG</h5>
+                <p class="lokasi-katalog">Semarang</p>
+                <span class="tanggal-katalog">15 Nov 2022</span>
+              </div>
+              <div class="d-flex justify-content-between mt-auto mx-3 mb-3">
+                <h4 class="harga-katalog">IDR 415.000</h4>
+                <span class="ticket-sold">Ticket Habis</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="assets/img/katalog/COVER-patraiarki-300x300.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Partai Anarki</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
-              <a href="#" class="btn btn-primary">Add To Card</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="assets/img/katalog/cover-psk-live-annive-300x300.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Live PSK Anivv</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <a href="#" class="btn btn-primary">Add To Card</a>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="assets/img/katalog/cover-psk-live-annive-300x300.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="judul-katalog">Let's Love Indonesia We all are one K-POP concert</h5>
+                <p class="lokasi-katalog">Jakarta Pusat</p>
+                <span class="tanggal-katalog">17 Nov 2022</span>
+              </div>
+              <div class="d-flex justify-content-between mt-auto mx-3 mb-3">
+                <h4 class="harga-katalog">IDR 500.000</h4>
+                <span class="ticket-ready">Ticket Tersedia Sekarang</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <div class="container py-5">
-    <div class="woocommerce-tabs position-relative">
-      <ul class="nav nav-tabs" role="tablist" id="productTab">
-        <li class="nav-item"> <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description"
-            role="tab" aria-controls="description">Description</a></li>
-        <li class="nav-item"> <a class="nav-link " id="reviews-tab" data-toggle="tab" href="#reviews" role="tab"
-            aria-controls="reviews">Reviews (1)</a></li>
-      </ul>
-      <div class="tab-content pt-4 pb-4 text-secondary" id="productTabContent">
-        <div class="tab-pane active show" id="description" role="tabpanel" aria-labelledby="description-tab">
-          <div class="border-bottom text-secondary pb-5 single-product-detail mb-4">
-            <div class="mb-4"> Sebuah bundling produk Keadaan Kahar dan Opener Keadaan Kahar. Acara yang telah digelar
-              di bilangan Jakarta Pusat pada 20 Desember 2020 yang lalu sukses terlaksana dan memikat hati para
-              penikmatnya. Bagi kalian yang ingin mengikuti acara Keadaan Kahar secara lengkap, silakan sikat produk
-              bundling ini. Di dalam produk ini terdapat banyak pambahasan mengenai keresahan para komika dalam
-              menghadapi situasi pandemi COVID-19.<div class="mb-4">
-                <blockquote>
-                  <div></div>
-                </blockquote>
-                <div>
-                  <div><strong>PERHATIAN</strong></div>
-                  <ul>
-                    <li>Size : 1.13 GB (file dalam format .rar)</li>
-                    <li>Durasi Keadaan Kahar : 01:28:02 (850 MB)</li>
-                    <li>Durasi Opener Keadaan Kahar : 00:32:32 (314.2 MB)</li>
-                    <li>Resolusi Video : HD 1280X720</li>
-                    <li>Segera lakukan download karena link akan otomatis expired dalam waktu 7 hari</li>
-                  </ul>
-                </div>
-                <blockquote>
-                  <div></div>
-                </blockquote>
-                <div><strong>TIPS DOWNLOAD</strong></div>
-                <ul>
-                  <li>Masuk ke My account, lalu ke My order&nbsp;<a
-                      href="https://comika.id/my-account/orders/"><strong><em>https://comika.id/my-account/orders/</em></strong></a>&nbsp;dan
-                    klik tombol DOWNLOAD pada order produk yang sukses pembayaran (COMPLETED)</li>
-                  <li>Jangan gunakan wifi yg ada limit download</li>
-                  <li>Jangan gunakan software download external gratisan</li>
-                  <li>Disarankan gunakan incognito browse atau private browser Google Chrome</li>
-                </ul>
-              </div>
-            </div>
-            <dl class="row">
-              <dt class="col-12 col-sm-1 mb-3 mb-sm-0">Tags</dt>
-              <dd class="col-12 col-sm-11"> <a href="https://comika.id/product-category/digital-download/arif-brata/"
-                  class="text-primary">Arif Brata</a>, <a
-                  href="https://comika.id/product-category/digital-download/barry-williem/" class="text-primary">Barry
-                  Williem</a>, <a href="https://comika.id/product-category/digital-download/bundling-digital-download/"
-                  class="text-primary">Bundling</a>, <a
-                  href="https://comika.id/product-category/digital-download/david-nurbianto/" class="text-primary">David
-                  Nurbianto</a>, <a
-                  href="https://comika.id/product-category/digital-download/digital-download-pandji-pragiwaksono/"
-                  class="text-primary">Digital Download Pandji Pragiwaksono</a>, <a
-                  href="https://comika.id/product-category/stand-up-comedy/pandji-pragiwaksono/"
-                  class="text-primary">Pandji Pragiwaksono</a>, <a
-                  href="https://comika.id/product-category/digital-download/rin-hermana/" class="text-primary">Rin
-                  Hermana</a> , <a href="https://comika.id/product-tag/bundling/" class="text-primary">Bundling</a>, <a
-                  href="https://comika.id/product-tag/comika-talent-management/" class="text-primary">Comika Talent
-                  Management</a>, <a href="https://comika.id/product-tag/comikaid-original/"
-                  class="text-primary">Comikaid Original</a>, <a href="https://comika.id/product-tag/editor-picks/"
-                  class="text-primary">Digital Download For You</a>, <a
-                  href="https://comika.id/product-tag/keadaan-kahar/" class="text-primary">Keadaan Kahar</a></dd>
-              <dt class="col-12 col-sm-1 mb-2 mb-sm-4">Talent</dt>
-              <dd class="col-12 col-sm-11 mb-2 mb-sm-4"> <a
-                  href="https://comika.id/product-category/digital-download/arif-brata/" class="text-primary">Arif
-                  Brata</a><a href="https://comika.id/product-category/digital-download/barry-williem/"
-                  class="text-primary">Barry Williem</a><a
-                  href="https://comika.id/product-category/digital-download/bundling-digital-download/"
-                  class="text-primary">Bundling</a><a
-                  href="https://comika.id/product-category/digital-download/david-nurbianto/" class="text-primary">David
-                  Nurbianto</a><a
-                  href="https://comika.id/product-category/digital-download/digital-download-pandji-pragiwaksono/"
-                  class="text-primary"> Pandji Pragiwaksono</a><a
-                  href="https://comika.id/product-category/digital-download/rin-hermana/" class="text-primary">Rin
-                  Hermana</a></dd>
-            </dl>
-          </div>
-        </div>
-        <div class="tab-pane " id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-          <div id="reviews" class="woocommerce-Reviews">
-            <div id="comments">
-
-            </div>
-            <div id="review_form_wrapper">
-              <div id="review_form">
-                <div id="respond" class="comment-respond">
-                  <h4 id="reply-title" class="comment-reply-title mt-4">Add a review <small><a rel="nofollow"
-                        id="cancel-comment-reply-link" href="/product/bundling-keadaan-kahar/#respond"
-                        style="display:none;">Cancel reply</a></small></h4>
-                </div>
-              </div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
+    <!-- Section Katalog - END -->
   </div>
+
+
+
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="assets/js/jquery-3.5.0.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/style.js"></script>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -223,7 +177,7 @@
         clickable: true,
       },
       autoplay: {
-        delay: 3000,
+        delay: 10000,
         disableOnInteraction: false,
       },
     });
