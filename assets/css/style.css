@@ -1,14 +1,31 @@
 
 /* Navbar section */
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* .bg-dark {
-  background:  !important;
-} */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  background: #fbfbfb;
+  color: #494a4a;
+}
 
-nav ul > li {
+.section-title {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.mt-6 {
+  margin-top: 6rem !important;
+}
+
+/* ---------------------- Navbar-1 ------------------------ */
+/* nav ul > li {
   margin-right: 1.5rem;
 }
 
@@ -65,20 +82,117 @@ nav ul > li {
   color: #000 !important;
 }
 
-/* .slider-top {
-    padding: 1rem 10rem;
-}
-
-.mySwiper {
-    border-radius: 15px;
-} */
-
 .swiper-pagination-bullet-active {
   width: 20px !important;
   border-radius: 100px !important;
+} */
+/* -------------------- Navbar-1 - END ------------------------ */
+
+/* ---------------------- Navbar-2 ------------------------ */
+.navbar {
+  box-shadow: -6px -5px 10px 2px rgb(0 0 0 / 46%);
+  -webkit-box-shadow: -6px -5px 10px 2px rgb(0 0 0 / 46%);
+  -moz-box-shadow: -6px -5px 10px 2px rgb(0 0 0 / 46%);
 }
 
+.navbar .ul-left a {
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.navbar-brand {
+  margin-right: 0;
+  width: 13%;
+  margin-right: 15px;
+}
+
+.nav-right {
+  display: flex!important;
+  font-weight: 600;
+}
+
+.nav-right a {
+  color: #000;
+  margin-right: 1.3rem;
+}
+
+.nav-right .ag-lang a {
+  margin-right: 0;
+}
+
+.nav-right .ag-lang .active {
+  color: #ea9a3f;
+}
+
+.bgcover-header {
+  /* background-image: url('../img/background-1.png'); */
+  background-image: url('https://www.kiostix.com/images/banner.jpg?d6029379ec2b552acd9bc09ddb02642a');
+  margin-top: 4rem;
+  color: #fff;
+  text-align: center;
+}
+
+.searchBox {
+  background: #fff;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+  padding-top: 0;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchButton {
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color : #2f3640;
+  background: white;
+}
+
+.searchInput {
+  border:none;
+  background: none;
+  outline:none;
+  float:left;
+  color: #2f3640;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0 6px;
+  width: 87%;
+}
+/* ---------------------- Navbar-2 - END ------------------------ */
+
+/* Section Kota */
+.section-kota .card {
+  border-radius: 10px;
+}
+
+.section-kota .card-title {
+  font-weight: 600;
+  color: #000;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* Section Kota - END */
+
 /* CSS Katalog */
+.section-catalog a {
+  color: #000;
+}
+
+.section-catalog a:hover {
+  text-decoration: none;
+}
+
 .see-more {
   display: inline-grid;
   align-items: center;
@@ -111,6 +225,7 @@ nav ul > li {
 .harga-katalog {
   color: #000000ba;
   margin-bottom: 0;
+  font-size: 20px;
 }
 
 .judul-katalog {
@@ -126,3 +241,215 @@ nav ul > li {
   font-size: 13.5px;
 }
 /* CSS Katalog - END */
+
+/* Section Join US */
+.section-join-us h1 {
+  font-size: 50px;
+}
+
+.section-join-us p {
+  font-size: 23px;
+}
+
+.btn-join-us {
+  color: #fff;
+  background-color: #6351ce;
+  border-color: #6351ce;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+/* Section Join US - END */
+
+/* Section Blog */
+.section-blog .card-title {
+  font-size: 15px;
+  line-height: 1.3rem;
+  font-weight: 600;
+}
+
+.section-blog .card-text {
+  font-size: 13px;
+}
+/* Section Blog - End */
+
+/* Detail */
+.breadcrumb {
+  background: #fbfbfb;
+  font-size: 13px;
+  margin-bottom: 7px;
+  padding-left: 7px;
+}
+
+.breadcrumb .active {
+  font-weight: 600;
+}
+
+.img-detail img {
+  width: auto;
+  height: 239px;
+  object-fit: cover;
+}
+
+.tag-detail .tag {
+    background: #efefef;
+    padding: 6px 11px;
+    border-radius: 11px;
+    font-size: 15px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.judul-katalog-detail {
+  font-size: 14px;
+  line-height: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.tanggal-katalog-detail {
+  color: #8e919b;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.harga-katalog-detail {
+  font-weight: 600;
+}
+
+.section-right .card {
+  box-shadow: 0 4px 8px rgb(30 44 106 / 10%);
+  border: none;
+  border-radius: 23px;
+  padding: 9px;
+}
+
+.section-right .event-date > i,
+.section-right .time-date > i,
+.section-right .location-date > i {
+  color: #0049cc;
+  margin-right: 0.5rem;
+  font-size: 15px;
+}
+
+.section-right .event-date > label,
+.section-right .time-date > label,
+.section-right .location-date > label {
+  font-size: 15px;
+}
+
+.img-penyelenggara {
+  width: 5rem;
+}
+
+.img-penyelenggara > img {
+  width: 4rem;
+}
+
+.text-penyelenggara > span {
+  color: #8e919b;
+  font-size: 13px;
+}
+
+.text-penyelenggara > p {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.detail-amount {
+  margin-top: 1rem;
+  font-size: 17px;
+}
+
+.txt-cart .cart-item-name,
+.detail-amount .tiket {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.detail-amount .harga {
+  font-weight: 700;
+}
+
+.ticket-controller {
+  display: grid;
+  grid-template-columns: .2fr 48px .2fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.ticket-controller-decrease, .ticket-controller-increase {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  border: 2px solid #0049cc;
+  border-radius: 50%;
+  color: #0049cc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ticket-controller-label {
+    color: #151416;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.ticket-controller-decrease:after {
+  content: "-";
+  display: block;
+}
+
+.ticket-controller-increase:after {
+  content: "+";
+  display: block;
+}
+
+.btn-beli-tiket {
+  background: #0049cc;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  font-weight: 600; 
+}
+/* Detail - END */
+
+/* Footer */
+footer .subscribe h6 {
+  font-weight: 600;
+}
+
+footer b {
+  font-weight: 600 !important;
+}
+
+footer .subscribe p {
+  font-size: 13px;
+}
+
+footer .subscribe .input-group input {
+  border-right: none;
+}
+
+footer .subscribe .input-group span {
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #ffff;
+}
+/* Footer - END */
