@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+        <!-- Google Font Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+        <!-- Pemanggilan CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Pemanggilan JS -->
+        <script src="assets/js/style.js"></script>
+
+        <title>Konser Kelompok 3</title>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md fixed-top bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/gotix-image-brand.svg" alt="" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ul-left">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Aktivitas Dan Hiburan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Event Online</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="justify-content-end nav-right">
+                    <a href="javascript:void(0)" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="javascript:void(0)" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="javascript:void(0)" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="javascript:void(0)" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <div class="ag-lang">
+                        <a class="active" href="javascript:void(0)">ID</a>
+                        <span>|</span>
+                        <a class="" href="javascript:void(0)">EN</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar - END -->
+
+        <div class="container mt-6 mb-5">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- <h3><b>Checkout</b></h3> -->
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card detail-pemesan">
+                            <div class="card-body">
+                                <form class="checkout-form">
+                                    <div class="d-flex mb-3">
+                                        <div class="icon-dtl-pemesan">
+                                            <i class="fa-regular fa-address-book"></i>
+                                        </div>
+                                        <h5 class="my-auto">Detail Pemesan</h5>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label">Nama Depan <span class="txt-danger">*</span></label>
+                                                <input type="text" class="form-control" name="nama_depan">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Nama Belakang <span class="txt-danger">*</span></label>
+                                                <input type="text" class="form-control" name="nama_belakang">
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control">
+                                            <span style="font-size: 12px;">E-voucher akan dikirim ke email ini.</span>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label class="form-label">No Telepon</label>
+                                            <div class="input-group mb-3">
+                                                <button class="btn btn-outline-secondary brtb-0" type="button" id="button-addon1">+62</button>
+                                                <input type="text" class="form-control" placeholder="Nomor Telepon">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <section class="payment-category mt-5">
+                                        <div class="d-flex mb-3">
+                                            <div class="icon-dtl-pemesan">
+                                                <i class="fas fa-wallet"></i>
+                                            </div>
+                                            <h5 class="my-auto">Pilih Pembayaran</h5>
+                                        </div>
+                                        
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="payment-methods">
+                                                        <div class="single-payment-method">
+                                                            <a class="text- decoration-none transfer-manual" href="#">
+                                                                <img class="img-fluid" src="assets/img/checkout/bca 1.png" >
+                                                                <p>BCA</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="payment-methods">
+                                                        <div class="single-payment-method">
+                                                            <a class="text-decoration-none transfer-manual" href="#">
+                                                                <img class="img-fluid" src="assets/img/checkout/briva 1.png" >
+                                                                <p>Briva</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="payment-methods">
+                                                        <div class="single-payment-method">
+                                                            <a class="text-decoration-none transfer-manual" href="#">
+                                                                <img class="img-fluid" src="assets/img/checkout/GoPay 1.png" >
+                                                                <p>Gopay</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="payment-methods">
+                                                        <div class="single-payment-method">
+                                                            <a class="text- decoration-none transfer-manual" href="#">
+                                                                <img class="img-fluid" src="assets/img/checkout/AlfaMart 1.png" >
+                                                                <p>Alfamart</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="payment-methods">
+                                                        <div class="single-payment-method">
+                                                            <a class="text-decoration-none transfer-manual" href="#">
+                                                                <img class="img-fluid" src="assets/img/checkout/iconQris 1.png" >
+                                                                <p>QRIS</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="payment-methods">
+                                                        <div class="single-payment-method">
+                                                            <a class="text-decoration-none transfer-manual" href="#">
+                                                                <img class="img-fluid" src="assets/img/checkout/Logo Indomaret 1.png" >
+                                                                <p>Indomaret</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </form>
+                            </div>
+                        </div>
+                        <section class="submit-concert">
+                            <p>Dengan klik <b>"Lanjutkan Ke Pembayaran"</b> Anda menyetujui aturan, batasan, dan <a href="javascript:void(0)">Syarat & Ketentuan.</a></p>
+                            <div class="float-right">
+                                <a href="checkout-berhasil.html" class="btn btn-join-us">Lanjutkan Ke Pembayaran</a>
+                            </div>
+                        </section>
+                    </div>
+                    
+                    <div class="col-md-4 checkout-right">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>Detail Pemesanan</h5>
+                                <div class="col-md-12 px-0">
+                                    <section class="header-detail-pemesanan mt-4">
+                                        <div class="d-flex">
+                                            <img src="assets/img/katalog/COVER-AWAS-LICIN--300x300.png" alt="">
+                                            <h6>Garuda Wisnu Kencana Cultural Park (GWK), Bandung</h6>
+                                        </div>
+                                    </section>
+                                    <hr>
+                                    <p>Total Tiket Masuk GWK</p>
+                                    <p>1 Tiket</p>
+                                    <hr>
+                                    <span>Tanggal Konser</span>
+                                    <p>Sab, 19 Nov 2022</p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <span class="txt-total my-auto">Total Pembayaran</span>
+                                        <span class="pembayaran">Rp 125.000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+            <!-- Section: Links  -->
+            <section class="pt-3">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-12 text-left mb-3">
+                            <img src="assets/img/gotix_footer.svg" alt="" width="13%">
+                        </div>
+                        <div class="col-md-3 col-lg-4 col-xl-3 mb-4 text-left">
+                            <p> Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                        </div>
+                        
+                        <div class="col-md-2 col-lg-2 col-xl-2 mb-4 text-left offset-md-1">
+                            <p>
+                                <a href="javascript:void(0)" class="text-white"><b>About Us</b></a>
+                            </p>
+                            <p>
+                                <a href="javascript:void(0)" class="text-white"><b>Terms & Conditions</b></a>
+                            </p>
+                            <p>
+                                <a href="javascript:void(0)" class="text-white"><b>Privacy Policy</b></a>
+                            </p>
+                            <p>
+                                <a href="javascript:void(0)" class="text-white"><b>FAQ</b></a>
+                            </p>
+                            <p>
+                                <a href="javascript:void(0)" class="text-white"><b>Contact Us</b></a>
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-lg-4 col-xl-4 mb-4 text-left offset-md-2 subscribe">
+                            <h6>Subscribe to our Newsletter</h6>
+                            <p>Get the latest update for exciting events around you!</p>
+                            <div class="input-group" width: 75%;>
+                                <input type="text" class="form-control" placeholder="Enter your email">
+                                <span class="input-group-text"><i class="far fa-envelope"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <!-- Footer -->
+
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="assets/js/jquery-3.5.0.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/style.js"></script>
+    </body>
+</html>
