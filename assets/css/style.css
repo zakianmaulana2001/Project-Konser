@@ -216,6 +216,29 @@ a {
 }
 /* Section Blog - End */
 
+/* Section Member */
+.section-member img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  object-position: right;
+}
+
+.section-member p {
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.section-member span {
+  font-size: 13px;
+}
+
+.obj-bottom {
+  object-position: bottom !important;
+}
+/* Section Member - END */
+
 /* Detail */
 .breadcrumb {
   background: #fbfbfb;
